@@ -5,7 +5,7 @@ $(document).ready(function () {
   $("#currentDay").text(today);
   var currentHour = moment().hour();
 })
-
+ 
 
 
 
