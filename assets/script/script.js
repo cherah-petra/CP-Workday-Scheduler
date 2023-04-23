@@ -1,20 +1,45 @@
+
+//Current time and day
 $(document).ready(function () {
   var today = dayjs().format("dddd, MMMM D, YYYY")
   $("#currentDay").text(today);
-  let currentHour = dayjs().hour()
+  var currentHour = moment().hour();
 })
 
- if (currentHour) === timeContainer {
-    $(this).addClass("present");
- }  else if (currentHour < timeContainer) {
-    $(this).removeClass("present");   
-    $(this).removeClass("future");
- }  else if (currentHour > timeContainer {
-    $(this).removeClass("future");
-    $(this).addClass("past");
- })
 
- 
+
+
+$(".time-block").each(function () {
+  var timeContainer = parseInt($this).attr("id").split("hour-")[1];
+  console.log('timeContainer');
+})
+
+
+
+
+if (timeContainer < currentHour) {
+  $(this).removeClass("future");
+  $(this).removeClass("present");
+  $(this).addClass("past");
+}
+
+else if (timeContainer > currentHour) {
+  $(this).removeClass("past");
+  $(this).removeClass("present");
+  $(this).addClass("future");
+}
+
+else if (timeContainer === currentHour) {
+  $(this).removeClass("future");
+  $(this).removeClass("past");
+  $(this).addClass("present");
+}
+
+document.getElementById("hour-13").addEventListener("click", saveDescription);
+
+function saveDescription() {
+  localStorage.setItem("description")
+}
 
 // Wrap all code that interacts with tdhe DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
@@ -42,4 +67,7 @@ $(document).ready(function () {
     // attribute of each time-block be used to do this?
     //
     // TODO: Add code to display the current date in the header of the page.
-  
+
+//Retrive description from local storage
+
+    $("#hour-09 .time-block").val(localStorage.getItem("09"));
