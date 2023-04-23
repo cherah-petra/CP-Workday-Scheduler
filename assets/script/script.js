@@ -1,20 +1,20 @@
+var timeContainer
+var currentHour
 
 //Current time and day
 $(document).ready(function () {
-  var today = dayjs().format("dddd, MMMM D, YYYY")
+  var today = dayjs().format('dddd, MMMM Do YYYY')
   $("#currentDay").text(today);
-  var currentHour = moment().hour();
+  var currentHour = dayjs().hour();
 })
  
 
 
 
 $(".time-block").each(function () {
-  var timeContainer = parseInt($this).attr("id").split("hour-")[1];
-  console.log('timeContainer');
+  var timeContainer = parseInt($(this).attr('id').split('hour-')[1]);
+  console.log(timeContainer);
 })
-
-
 
 
 if (timeContainer < currentHour) {
