@@ -1,22 +1,24 @@
-var timeContainer
+var timeContainer = document.getElementById("timeContainer")
 var currentHour
+var saveDescription = document.getElementsByClassName(".description");
 
 //Current time and day
 $(document).ready(function () {
-  var today = dayjs().format('dddd, MMMM Do YYYY')
+  var today = dayjs().format('dddd, MMMM DD YYYY')
   $("#currentDay").text(today);
   var currentHour = dayjs().hour();
-})
- 
+  console.log(currentHour);
 
 
+
+//split time from hour ID for comparison
 
 $(".time-block").each(function () {
   var timeContainer = parseInt($(this).attr('id').split('hour-')[1]);
   console.log(timeContainer);
-})
 
 
+//Compare current time to each container
 if (timeContainer < currentHour) {
   $(this).removeClass("future");
   $(this).removeClass("present");
@@ -34,12 +36,32 @@ else if (timeContainer === currentHour) {
   $(this).removeClass("past");
   $(this).addClass("present");
 }
+});
+});
 
+//Add Save event listener
+
+document.getElementById("hour-9").addEventListener("click", saveDescription);
+document.getElementById("hour-10").addEventListener("click", saveDescription);
+document.getElementById("hour-11").addEventListener("click", saveDescription);
+document.getElementById("hour-12").addEventListener("click", saveDescription);
 document.getElementById("hour-13").addEventListener("click", saveDescription);
+document.getElementById("hour-14").addEventListener("click", saveDescription);
+document.getElementById("hour-15").addEventListener("click", saveDescription);
+document.getElementById("hour-16").addEventListener("click", saveDescription);
+document.getElementById("hour-17").addEventListener("click", saveDescription);
 
-function saveDescription() {
-  localStorage.setItem("description")
+
+const saveDescription = localStorage.getItem('saveDescription');
+
+if (saveDescription) {
+  savedTextDisplay.textContent = savedText;
 }
+
+
+//function localStorage() {
+  //localStorage.getItem(timeContainer, saveDescription)
+//}
 
 // Wrap all code that interacts with tdhe DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
@@ -69,5 +91,3 @@ function saveDescription() {
     // TODO: Add code to display the current date in the header of the page.
 
 //Retrive description from local storage
-
-    $("#hour-09 .time-block").val(localStorage.getItem("09"));
