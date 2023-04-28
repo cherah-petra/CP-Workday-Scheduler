@@ -23,7 +23,8 @@ File can be downloaded and used to help organize the users schedule, or to obtai
 
 ## License
 
-- GitHub repository URL: 
+- GitHub repository URL: https://github.com/cherah-petra/CP-Workday-Scheduler
+- GitHub Page: https://cherah-petra.github.io/CP-Workday-Scheduler/
 - License: license.txt
 
 
