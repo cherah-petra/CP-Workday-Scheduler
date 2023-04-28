@@ -1,19 +1,39 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+  background-image: url(/assets/img/pexels-bich-tran-911059.jpg);
 }
 
 textarea {
-  background: transparent;
-  border: none;
   resize: none;
   color: #000000;
-  border-left: 1px solid black;
-  padding: 10px;
+  padding: 20px;
 }
 
+textarea:focus {
+  outline: none;
+}
+
+.radial {
+  background: rgb(250,172,114);
+  background: radial-gradient(circle, rgba(250,172,114,1) 0%, rgba(223,190,9,1) 50%, rgba(163,211,244,1) 85%);
+}
+
+h1 {
+  color: #fff;
+  font-size: 28px;
+  font-family: 'Rubik', sans-serif;
+}
+
+p {
+  color: #fff;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
 .description {
   white-space: pre-wrap;
+  background-color: #fff;
+
 }
 
 .time-block {
@@ -21,40 +41,46 @@ textarea {
 }
 
 .row {
-  border-top: 1px solid white;
+  border: none;
+  margin-bottom: 5px;
 }
 
 .hour {
-  background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
+  background-color: #fff;
+  color: #205b82;
+  font-weight: 700;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 .past {
-  background-color: #d3d3d3;
+  background-color: #6d7d88;
   color: white;
 }
 
 .present {
-  background-color: #ff6961;
-  color: white;
+  background-color: #8af9c9;
+  color: rgb(24, 24, 24);
 }
 
 .future {
-  background-color: #77dd77;
-  color: white;
+  background-color: #87badb;
+  color: rgb(42, 42, 42);
 }
 
 .saveBtn {
-  border-left: 1px solid black;
+  border-left: 1px solid #205b82;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06aed5;
+  background-color: #205b82;
   color: white;
 }
 
 .saveBtn i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
+  color: #ff6961;
 }
+
+
  
