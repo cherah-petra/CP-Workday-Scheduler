@@ -17,8 +17,9 @@ File can be downloaded and used to help organize the users schedule, or to obtai
 
 ## Credits
 
-- www.pexels.com free stock images
-- original codeauthor: a-nyx
+- Free stock images (www.pexels.com)
+- original code author: a-nyx
+- Day.js (https://day.js.org/en/)
 
 
 ## License
