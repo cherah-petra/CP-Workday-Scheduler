@@ -17,8 +17,8 @@ File can be downloaded and used to help organize the users schedule, or to obtai
 
 ## Credits
 
-www.pexels.com free stock images
-original codeauthor: a-nyx
+- www.pexels.com free stock images
+- original codeauthor: a-nyx
 
 
 ## License
