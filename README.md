@@ -9,6 +9,14 @@ Building upon the existing code provided, the tool was further developed in orde
 - notes entered in the description are recalled upon load via local storage
 - The current day is displayed at the top of the page
 
+## Technologies Used
+
+- CSS
+- HTML
+- JQuery
+- Google Fonts
+- Bootstrap
+
 ## Usage
 
 File can be downloaded and used to help organize the users schedule, or to obtain coding knowledge. 
