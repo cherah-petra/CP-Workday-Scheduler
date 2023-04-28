@@ -1,8 +1,5 @@
 # CP-Workday-Scheduler-05
 
-
-# CP Portfolio Challenge 02
-
 ## Description
 
 Building upon the existing code provided, the tool was further developed in order to save content to local storage and connect to day.js. The connection to day.js allows for the current time and date to be displayed and utilized.
